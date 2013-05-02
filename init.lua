@@ -1,6 +1,6 @@
 -- Minetest 0.4 Mod: Nether
 
-local NETHER_DEPTH = -5000
+local NETHER_DEPTH = -20000
 
 minetest.register_node("nether:portal", {
 	description = "Nether Portal",
