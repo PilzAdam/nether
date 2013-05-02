@@ -1,7 +1,7 @@
 mobs:register_mob("nether:mese_monster", {
 	type = "monster",
 	hp_max = 10,
-	collisionbox = {-0.5, -0.5, -0.5, 0.5, 0.5, 0.5},
+	collisionbox = {-0.5, -1.5, -0.5, 0.5, 0.5, 0.5},
 	visual = "mesh",
 	mesh = "nether_mese_monster.x",
 	textures = {"nether_mese_monster.png"},
@@ -37,4 +37,4 @@ mobs:register_mob("nether:mese_monster", {
 		punch_end = 63,
 	}
 })
-mobs:register_spawn("nether:mese_monster", {"nether:rack"}, 15, -1, 5000, 3, 0)
+mobs:register_spawn("nether:mese_monster", {"nether:rack"}, 15, -1, 2500, 10, 0)
