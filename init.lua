@@ -396,3 +396,5 @@ replace("default:sand", "nether:sand")
 replace("default:cobble", "nether:brick")
 replace("default:mossycobble", "nether:brick")
 replace("stairs:stair_cobble", "nether:brick")
+
+dofile(minetest.get_modpath("nether").."/mobs.lua")
