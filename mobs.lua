@@ -1,4 +1,3 @@
-
 mobs:register_mob("nether:mese_monster", {
 	type = "monster",
 	hp_max = 10,
@@ -14,9 +13,9 @@ mobs:register_mob("nether:mese_monster", {
 	damage = 3,
 	drops = {
 		{name = "default:mese",
-		chance = 5,
-		min = 1,
-		max = 5,},
+		chance = 1,
+		min = 0,
+		max = 2,},
 	},
 	light_resistant = true,
 	armor = 80,
@@ -38,4 +37,4 @@ mobs:register_mob("nether:mese_monster", {
 		punch_end = 63,
 	}
 })
-mobs:register_spawn("nether:mese_monster", {"nether:rack"}, 15, -1, 1000, 3, 0)
+mobs:register_spawn("nether:mese_monster", {"nether:rack"}, 15, -1, 5000, 3, 0)
