@@ -1,4 +1,4 @@
-#Minetest 0.4 mod: nether
+Nether Mod for Minetest
 
 ##License of source code:
 
