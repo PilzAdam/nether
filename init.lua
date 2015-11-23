@@ -369,6 +369,13 @@ minetest.register_node("nether:brick", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+stairs.register_stair_and_slab("nether_brick", "nether:brick",
+                {cracky = 3},
+                {"nether_brick.png"},
+                "Nether Brick Stair",
+                "Nether Brick Slab",
+                default.node_sound_stone_defaults())
+
 local fence_texture =
         "default_fence_overlay.png^nether_brick.png^default_fence_overlay.png^[makealpha:255,126,126"
 minetest.register_node("nether:fence_nether_brick", {
