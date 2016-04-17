@@ -372,6 +372,32 @@ minetest.register_node("nether:brick", {
 	description = "Nether Brick",
 	tiles = {"nether_brick.png"},
 	groups = {cracky=2,level=2},
+	sounds = default.node_sound_stone_defaults()
+})
+
+stairs.register_stair_and_slab("nether_brick", "nether:brick",
+	{cracky=3, oddly_breakable_by_hand=1},
+	{"nether_brick.png"},
+	"nether stair",
+	"nether slab",
+	default.node_sound_stone_defaults())
+
+local fence_texture =
+	"default_fence_overlay.png^nether_brick.png^default_fence_overlay.png^[makealpha:255,126,126"
+minetest.register_node("nether:fence_nether_brick", {
+	description = "Nether Brick Fence",
+	drawtype = "fencelike",
+	tiles = {"nether_brick.png"},
+	inventory_image = fence_texture,
+	wield_image = fence_texture,
+	paramtype = "light",
+	sunlight_propagates = true,
+	is_ground_content = false,
+	selection_box = {
+		type = "fixed",
+		fixed = {-1/7, -1/2, -1/7, 1/7, 1/2, 1/7},
+	},
+	groups = {cracky=3,level=2},
 	sounds = default.node_sound_stone_defaults(),
 })
 
