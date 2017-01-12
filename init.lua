@@ -445,6 +445,24 @@ minetest.register_node("nether:glowstone", {
 	sounds = default.node_sound_glass_defaults(),
 })
 
+minetest.register_node("nether:glowstone_lamp", {
+	description = "Glowstone lamp",
+	tiles = {"nether_glowstone_lamp.png"},
+	is_ground_content = true,
+	light_source = 13,
+	groups = {cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_craft({
+	output = "nether:glowstone_lamp",
+	recipe = {
+		{ "default:stick", "default:stick", "default:stick" },
+		{ "default:stick", "nether:glowstone", "default:stick" },
+		{ "default:stick", "default:stick", "default:stick" },
+	},
+})
+
 minetest.register_node("nether:brick", {
 	description = "Nether Brick",
 	tiles = {"nether_brick.png"},
