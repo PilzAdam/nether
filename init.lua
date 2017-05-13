@@ -506,7 +506,7 @@ minetest.register_craftitem(":default:mese_crystal_fragment", {
 	on_place = function(stack, _, pt)
 		if pt.under and minetest.get_node(pt.under).name == "default:obsidian" then
 			local done = make_portal(pt.under)
-			if done and not minetest.setting_getbool("creative_mode") then
+			if done and not minetest.settings:get_bool("creative_mode") then
 				stack:take_item()
 			end
 		end
